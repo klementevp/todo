@@ -1,0 +1,42 @@
+.container {
+    margin-top: 5%;
+}
+
+.home_top {
+    margin-bottom: 40px;
+}
+
+.home_finished-link {
+    text-decoration: none;
+}
+
+.home_card-btns {
+    margin: 30px 20px 15px 16px ;
+}
+
+.done_btn {
+    color: white;
+    text-decoration: none;
+    margin-right: 25px;
+    background-color: #185ABD;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.done_btn:hover {
+    color: white;
+    background: -webkit-linear-gradient(225deg, rgb(24, 90, 189) 44%, rgb(75, 178, 241) 72%);
+    background: -moz-linear-gradient(225deg, rgb(24, 90, 189) 44%, rgb(75, 178, 241) 72%);
+    background: linear-gradient(225deg, rgb(24, 90, 189) 44%, rgb(75, 178, 241) 72%);
+    transition: .6s;
+    opacity: .9;
+}
+
+.card-header {
+    background-color: #d5dce0;
+}
+
+.cr {
+    margin-bottom: 30px;
+}

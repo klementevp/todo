@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %}{% endblock %}
+
+
+{% block content %}
+
+<form action="" method="post">
+    {% csrf_token %}
+
+    <div class="room_form-group d-flex flex-column">
+        <label class="room_topic">Задание</label>
+        {{ form.task_name }}
+    </div>
+    <div class="room_form-group d-flex flex-column">
+        <label class="room_topic">Категория</label>
+        <input required type="text" value="" name="list" class="form-control" list="datalistOptions" id="exampleDataList" placeholder="">
+        <datalist id="datalistOptions">
+            {% for list in lists %}
+            <option value="{{ list.name }}">{{ list.name }}</option>
+            {% endfor %}
+        </datalist>
+    </div>
+    <div class="room_form-group d-flex flex-column">
+        <label class="room_topic">Дата выполнения</label>
+        {{ form.due_date }}
+    </div>
+    <div class="room_form-group d-flex flex-column">
+        <label class="room_topic">Комментарий</label>
+        {{ form.comment }}
+    </div>
+    <button type="submit">Создать</button>
+</form>
+
+{% endblock %}

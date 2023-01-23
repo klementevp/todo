@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}Create List{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-12 d-flex flex-column justify-content-center align-items-center align-self-center">
+            <form action="" method="post">
+                {% csrf_token %}
+                <div class="create_form-group d-flex flex-column">
+                    <label class="create_list-name">Создать категорию</label>
+                    {{ form.name }}
+                </div>
+                <div class="d-flex flex-row-reverse create_list-buttons">
+                    <button type="submit" class="create_button">Добавить</button>
+                    <a href="{{ request.META.HTTP_REFERER }}" class="list_cancel-button">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

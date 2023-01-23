@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 d-flex flex-column justify-content-center align-items-center align-self-center">
+            <h1 class="home_top">Предстоящие задания (<a href="{% url 'finished_page' request.user.id %}" class="home_finished-link">Выполненные задания</a>)</h1>
+            <nav aria-label="..." class="pagination_content">
+                <ul class="pagination pagination-lg">
+                    {% for p in page_obj.paginator.page_range %}
+                    <li class="page-item"><a class="page-link" href="?page={{ p }}">{{ p }}</a></li>
+                    {% endfor %}
+                </ul>
+            </nav>
+            {% for task in page_obj %}
+            <div class="card cr">
+                <div class="card-header">
+                    {{ task.list }}
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">{{ task.task_name }}</h5>
+                    <p class="card-text">{{ task.comment }}</p>
+                </div>
+                <div class="home_card-btns d-flex justify-content-start">
+                    <a href="{% url 'task_finished' user.id %}?id={{ task.id }}" class="done_btn">Выполнил</a>
+                    <a href="{% url 'update_task'  task.id %}" class="done_btn">Изменить</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% endblock%}

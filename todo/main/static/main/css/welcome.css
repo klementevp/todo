@@ -1,0 +1,55 @@
+.container {
+    margin-top: 10%;
+}
+
+.navbar {
+    background-color: #d5dce0;
+}
+
+
+.welcome_logo {
+    height: 250px;
+    width: 250px;
+}
+
+.welcome_links {
+    margin-top: 50px;
+    margin-right: 20px;
+}
+
+.welcome_links  a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.login {
+    margin-right: 25px;
+    background-color: #185ABD;
+    font-size: 25px;
+    padding: 10px 40px;
+    border-radius: 10px;
+}
+
+.login:hover {
+    background: -webkit-linear-gradient(225deg, rgb(24, 90, 189) 44%, rgb(75, 178, 241) 72%);
+    background: -moz-linear-gradient(225deg, rgb(24, 90, 189) 44%, rgb(75, 178, 241) 72%);
+    background: linear-gradient(225deg, rgb(24, 90, 189) 44%, rgb(75, 178, 241) 72%);
+    transition: .2s;
+}
+
+.register {
+    margin-right: 25px;
+    background-color: #4BB2F1;
+    font-size: 25px;
+    padding: 10px 33px;
+    border-radius: 10px;
+}
+
+.register:hover {
+    background: -webkit-linear-gradient(225deg, rgb(24, 90, 189) 44%, rgb(75, 178, 241) 72%);
+    background: -moz-linear-gradient(225deg, rgb(24, 90, 189) 44%, rgb(75, 178, 241) 72%);
+    background: linear-gradient(225deg, rgb(24, 90, 189) 44%, rgb(75, 178, 241) 72%);
+    transition: .6s;
+    opacity: .9;
+}

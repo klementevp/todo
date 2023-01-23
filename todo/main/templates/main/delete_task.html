@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}Удаление задания{% endblock %}
+
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-12 d-flex flex-column justify-content-center align-items-center align-self-center">
+            <div class="delete_form">
+                <form action="" method="post">
+                    {% csrf_token %}
+                    <h1>Вы уверены?</h1>
+                    <div class="delete_buttons">
+                        <a href="{{ request.META.HTTP_REFERER }}" class="cancel_delete">Отменить</a>
+                        <input type="submit" value="Подтвердить" class="confirm_delete">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

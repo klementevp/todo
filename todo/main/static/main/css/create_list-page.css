@@ -1,0 +1,72 @@
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-text-fill-color: black;
+    -webkit-box-shadow: 0 0 0 1000px transparent inset;
+    transition: background-color 5000s ease-in-out 0s;
+    border: 1px solid #D5DCE0;
+    background: transparent;
+}
+
+
+
+input {outline:none;}
+
+
+
+
+.create_form-group input {
+    padding: 5px 10px;
+}
+
+.create_list-name {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.create_list-buttons {
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.create_button {
+    color: white;
+    background-color: #185ABD;
+    font-size: 15px;
+    padding: 10px 40px;
+    border-radius: 10px;
+    border: none;
+}
+
+.create_button:hover {
+    background: -webkit-linear-gradient(225deg, rgb(24, 90, 189) 44%, rgb(75, 178, 241) 72%);
+    background: -moz-linear-gradient(225deg, rgb(24, 90, 189) 44%, rgb(75, 178, 241) 72%);
+    background: linear-gradient(225deg, rgb(24, 90, 189) 44%, rgb(75, 178, 241) 72%);
+    transition: .2s;
+}
+
+.list_cancel-button {
+    margin-right: 25px;
+    text-decoration: none;
+    color: white;
+    background-color: #4BB2F1;
+    font-size: 15px;
+    padding: 10px 33px;
+    border-radius: 10px;
+}
+
+.list_cancel-button:hover {
+    color: white;
+    background: -webkit-linear-gradient(225deg, rgb(24, 90, 189) 44%, rgb(75, 178, 241) 72%);
+    background: -moz-linear-gradient(225deg, rgb(24, 90, 189) 44%, rgb(75, 178, 241) 72%);
+    background: linear-gradient(225deg, rgb(24, 90, 189) 44%, rgb(75, 178, 241) 72%);
+    transition: .6s;
+    opacity: .9;
+}

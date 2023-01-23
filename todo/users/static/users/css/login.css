@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    background: url('../images/body_gradient.png');
+    /*background: -webkit-linear-gradient(45deg, rgb(75, 178, 241) 38%, rgb(24, 90, 189) 99%);*/
+    /*background: -moz-linear-gradient(45deg, rgb(75, 178, 241) 38%, rgb(24, 90, 189) 99%);*/
+    /*background: linear-gradient(45deg, rgb(75, 178, 241) 38%, rgb(24, 90, 189) 99%);*/
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-text-fill-color: black;
+    -webkit-box-shadow: 0 0 0 1000px transparent inset;
+    transition: background-color 5000s ease-in-out 0s;
+    border: 1px solid #D5DCE0;
+    background: transparent;
+}
+input {outline:none;}
+
+.container {
+    margin-top: 10%;
+}
+
+.navbar {
+    background-color: #d5dce0;
+}
+
+.login_top-text {
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+.login_form {
+    background-color: white;
+    width: 400px;
+    max-height: 600px;
+    border-radius: 10px;
+    padding: 20px 30px;
+}
+
+.login_label {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.form_group2 {
+    margin-top: 30px;
+}
+
+.login_buttons {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+
+.login_input {
+    padding: 10px;
+    border: 1px solid #D5DCE0;
+}
+
+
+.login_button {
+    color: white;
+    background-color: #185ABD;
+    font-size: 15px;
+    padding: 10px 40px;
+    border-radius: 10px;
+    border: none;
+}
+
+.login_button:hover {
+    background: -webkit-linear-gradient(225deg, rgb(24, 90, 189) 44%, rgb(75, 178, 241) 72%);
+    background: -moz-linear-gradient(225deg, rgb(24, 90, 189) 44%, rgb(75, 178, 241) 72%);
+    background: linear-gradient(225deg, rgb(24, 90, 189) 44%, rgb(75, 178, 241) 72%);
+    transition: .2s;
+}
+
+.cancel {
+    margin-right: 25px;
+    text-decoration: none;
+    color: white;
+    background-color: #4BB2F1;
+    font-size: 15px;
+    padding: 10px 33px;
+    border-radius: 10px;
+}
+
+.cancel:hover {
+    color: white;
+    background: -webkit-linear-gradient(225deg, rgb(24, 90, 189) 44%, rgb(75, 178, 241) 72%);
+    background: -moz-linear-gradient(225deg, rgb(24, 90, 189) 44%, rgb(75, 178, 241) 72%);
+    background: linear-gradient(225deg, rgb(24, 90, 189) 44%, rgb(75, 178, 241) 72%);
+    transition: .6s;
+    opacity: .9;
+}

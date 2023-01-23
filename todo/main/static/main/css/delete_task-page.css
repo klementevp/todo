@@ -1,0 +1,46 @@
+
+.delete_form h1{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.delete_buttons input {
+    border: none;
+}
+
+.cancel_delete {
+    color: white;
+    text-decoration: none;
+    margin-right: 25px;
+    background-color: #185ABD;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.cancel_delete:hover {
+    color: white;
+    background: -webkit-linear-gradient(225deg, rgb(24, 90, 189) 44%, rgb(75, 178, 241) 72%);
+    background: -moz-linear-gradient(225deg, rgb(24, 90, 189) 44%, rgb(75, 178, 241) 72%);
+    background: linear-gradient(225deg, rgb(24, 90, 189) 44%, rgb(75, 178, 241) 72%);
+    transition: .6s;
+    opacity: .9;
+}
+
+.confirm_delete {
+    text-decoration: none;
+    color: white;
+    background-color: #4BB2F1;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.confirm_delete:hover {
+    color: white;
+    background: -webkit-linear-gradient(225deg, rgb(24, 90, 189) 44%, rgb(75, 178, 241) 72%);
+    background: -moz-linear-gradient(225deg, rgb(24, 90, 189) 44%, rgb(75, 178, 241) 72%);
+    background: linear-gradient(225deg, rgb(24, 90, 189) 44%, rgb(75, 178, 241) 72%);
+    transition: .6s;
+    opacity: .9;
+}
